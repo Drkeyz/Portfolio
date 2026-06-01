@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Aeonik font — add your own file if you have a license */
+  /* @font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/Aeonik-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  } */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink font-sans antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .text-ink {
+    color: #0a0c0d;
+  }
+
+  .text-slate-ola {
+    color: #4a5565;
+  }
+
+  .text-muted-ola {
+    color: #6a7282;
+  }
+
+  .bg-ink {
+    background-color: #0a0c0d;
+  }
+
+  .tracking-hero {
+    letter-spacing: -0.034em;
+  }
+}
+
+.protocol-text {
+  color: black;
+  font-family: Aeonik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  /* 139.286% */
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}

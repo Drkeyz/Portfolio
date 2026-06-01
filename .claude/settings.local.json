@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ec2dbc3f-551d-44d0-b03d-a0e19cc4924c__get_design_context",
+      "mcp__ec2dbc3f-551d-44d0-b03d-a0e19cc4924c__get_screenshot",
+      "mcp__ec2dbc3f-551d-44d0-b03d-a0e19cc4924c__get_metadata",
+      "WebFetch(domain:www.figma.com)",
+      "PowerShell(Get-Command jq -ErrorAction SilentlyContinue)",
+      "Bash(python3 -c ' *)",
+      "Bash(npm create *)",
+      "Bash(npx create-vite@latest --template react .)",
+      "Bash(npm install *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\USER\\\\Documents\\\\portfolio\" -Recurse | Where-Object { -not $_.PSIsContainer } | Select-Object FullName)",
+      "Bash(findstr /n \"Where liquidity\\\\|never sleeps\\\\|6 week\\\\|Live link\\\\|ROLE\\\\|TIMELINE\\\\|SURFACES\\\\|PLATFORM\\\\|hero\\\\|HERO\")"
+    ]
+  }
+}
