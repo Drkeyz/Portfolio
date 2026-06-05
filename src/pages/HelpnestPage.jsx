@@ -84,10 +84,10 @@ export default function HelpnestPage() {
             04 — CUSTOMER SUPPORT · SAAS PLATFORM
           </p>
 
-          <div className="mb-10">
+          <div className="mb-10 text-[64px]">
             <h1
               className="leading-[1] tracking-[-0.03em]"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(80px,11vw,144px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               Helpnest.
             </h1>
@@ -95,7 +95,7 @@ export default function HelpnestPage() {
               className="leading-[1.1] mt-2"
               style={{
                 fontFamily: SERIF,
-                fontSize: 'clamp(56px,8vw,108px)',
+                // fontSize: 'clamp(56px,8vw,108px)',
                 fontStyle: 'italic',
                 color: SLATE,
                 letterSpacing: '-0.02em',
@@ -105,7 +105,7 @@ export default function HelpnestPage() {
             </p>
             <p
               className="leading-[1] mt-2"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(80px,11vw,144px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               between bot and human.
             </p>

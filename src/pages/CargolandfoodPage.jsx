@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import Footer from '../components/Footer'
+import Separator from '../components/Separator'
 
 /* ─────────────────────────────────────────────────────────────
    DESIGN TOKENS
@@ -130,10 +131,10 @@ export default function CargolandfoodPage() {
             02 — MOBILE · THREE SIDED MARKETPLACE
           </p>
 
-          <div className="mb-10">
+          <div className="mb-10 text-[64px]">
             <h1
               className="leading-[1] tracking-[-0.03em] block"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(80px,11vw,144px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               Cargolandfood.
             </h1>
@@ -141,7 +142,7 @@ export default function CargolandfoodPage() {
               className="leading-[1.1] block"
               style={{
                 fontFamily: SERIF,
-                fontSize: 'clamp(56px,8vw,108px)',
+                // fontSize: 'clamp(56px,8vw,108px)',
                 fontStyle: 'italic',
                 color: SLATE,
                 letterSpacing: '-0.02em',
@@ -151,7 +152,7 @@ export default function CargolandfoodPage() {
             </p>
             <p
               className="leading-[1] tracking-[-0.03em] block"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(80px,11vw,144px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               in one app.
             </p>
@@ -165,7 +166,7 @@ export default function CargolandfoodPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-4 gap-8 border-t border-[#EEEEEE] pt-8 mt-20">
+          <div className="flex justify-between gap-8 border-t border-[#EEEEEE] pt-8 mt-8">
             <div className="flex flex-col gap-1">
               <p className="text-[11px] tracking-[0.1em] mb-2" style={{ color: SLATE }}>ROLE</p>
               <p className="text-[15px] leading-snug" style={{ color: INK }}>Lead product designer</p>
@@ -790,7 +791,7 @@ export default function CargolandfoodPage() {
         </section>
 
         {/* ── [11] More features · Light & dark mode ───────────────────────────────── */}
-        <section className="mx-auto max-w-[1440px] px-8 py-16">
+        <section className="mx-auto max-w-[1440px] px-8 pt-16">
           <div className="grid grid-cols-[240px_1fr] gap-16 items-start">
             <div className="flex flex-col gap-2 pt-1">
               <SectionLabel number="11">More features · Light & dark mode</SectionLabel>
@@ -829,8 +830,10 @@ export default function CargolandfoodPage() {
           </div>
         </section>
 
+        <Separator/>
+
         {/* ── [12] OUTCOME ─────────────────────────────────────── */}
-        <section className="mx-auto max-w-[1440px] px-8 py-6">
+        <section className="mx-auto max-w-[1440px] px-8">
           <div className="grid grid-cols-[240px_1fr] gap-16 items-start">
             <div className="flex flex-col gap-2 pt-1">
               <SectionLabel number="12">Outcome</SectionLabel>
@@ -843,10 +846,11 @@ export default function CargolandfoodPage() {
                 What{' '}
                 <span style={{ fontStyle: 'italic', color: "#4A5565" }}>shipped.</span>
               </h2>
-
-              {/* Three stat columns */}
-              <div className="grid grid-cols-3 gap-12">
-                <div className="flex flex-col gap-4">
+            </div>
+          </div>
+          {/* Three stat columns */}
+              <div className="grid grid-cols-3 gap-12 px-16">
+                <div className="flex flex-col gap-4 border-[#eeeeee] border-[0.65px] border-solid px-7 py-8 rounded-2xl">
                   <p
                     className="font-normal leading-none tracking-tight"
                     style={{ fontFamily: SERIF, fontSize: 'clamp(48px,5vw,72px)', color: INK }}
@@ -860,7 +864,7 @@ export default function CargolandfoodPage() {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 border-[#eeeeee] border-[0.65px] border-solid px-7 py-8 rounded-2xl">
                   <p
                     className="font-normal leading-none tracking-tight"
                     style={{ fontFamily: SERIF, fontSize: 'clamp(48px,5vw,72px)', color: INK }}
@@ -874,7 +878,7 @@ export default function CargolandfoodPage() {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 border-[#eeeeee] border-[0.65px] border-solid px-7 py-8 rounded-2xl">
                   <p
                     className="font-normal leading-none tracking-tight"
                     style={{ fontFamily: SERIF, fontSize: 'clamp(48px,5vw,72px)', color: INK }}
@@ -888,8 +892,6 @@ export default function CargolandfoodPage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
         </section>
 
         {/* ── [13] REFLECTION ──────────────────────────────────── */}
@@ -939,7 +941,7 @@ export default function CargolandfoodPage() {
               className="font-normal leading-[0.95] tracking-[-0.03em] whitespace-nowrap"
               style={{ fontFamily: SERIF, fontSize: 'clamp(52px,9vw,120px)', color: '#08783D' }}
             >
-              <p class="underline"></p>Orgsphere<span style={{ color: '#08783D', fontStyle: 'italic' }}>.</span>
+              <p className="underline">Orgsphere.</p>
             </h2>
             <Link
               to="/projects/orgsphere"

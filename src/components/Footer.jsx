@@ -1,10 +1,11 @@
 const behanceIcon = 'https://www.figma.com/api/mcp/asset/77cc0ed4-0548-451e-8786-7463ccaccf8a'
 const youtubeIcon = 'https://www.figma.com/api/mcp/asset/927eb215-398f-4c3b-9acf-faeff5959dc4'
+import { FileUser, icons } from "lucide-react"
 
 const socials = [
   {
     label: 'X / Twitter',
-    href: '#',
+    href: 'https://x.com/_holadimeji_',
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.743l7.738-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -13,7 +14,7 @@ const socials = [
   },
   {
     label: 'Behance',
-    href: 'https://behance.net',
+    href: 'https://www.behance.net/dimejiadebiyi',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M2 4h7.5c2.2 0 4 1.3 4 3.5 0 1.3-.7 2.3-1.8 2.9 1.5.5 2.5 1.7 2.5 3.3 0 2.5-1.9 4.3-4.5 4.3H2V4zm2 5.5h4.8c1.2 0 2-.7 2-1.8 0-1.2-.8-1.7-2-1.7H4v3.5zm0 5.8h5.1c1.3 0 2.1-.8 2.1-2 0-1.3-.9-2-2.1-2H4v4zm12-9h6v1.5h-6V6.3zm.5 3.5c.5-1 1.5-1.5 2.7-1.5 2 0 3.3 1.3 3.3 3.3v.8h-4.7c.1 1 .8 1.6 1.8 1.6.7 0 1.3-.3 1.6-.8h1.9c-.5 1.5-1.8 2.4-3.5 2.4-2.2 0-3.7-1.4-3.7-3.5 0-.9.2-1.7.6-2.3zm2.6.4c-.9 0-1.5.5-1.7 1.3h3.3c-.2-.9-.7-1.3-1.6-1.3z" />
@@ -23,15 +24,16 @@ const socials = [
   {
     label: 'YouTube',
     href: 'https://youtube.com',
-    icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
-      </svg>
-    ),
+    // icon: (
+    //   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    //     <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+    //   </svg>
+    // ),
+    icon: <FileUser/>
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/oladimeji-adebiyi/',
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />

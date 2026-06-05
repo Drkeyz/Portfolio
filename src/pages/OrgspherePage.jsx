@@ -100,15 +100,15 @@ export default function OrgspherePage() {
         </div>
 
         {/* ── HERO ──────────────────────────────────────────── */}
-        <section className="mx-auto max-w-[1440px] px-8 pt-16 pb-16">
+        <section className="mx-auto max-w-[1440px] px-8 pt-16 pb-8">
           <p className="text-sm tracking-[0.12em] mb-8" style={{ color: GREEN }}>
             03 — MOBILE · ENTERPRISE HR PLATFORM
           </p>
 
-          <div className="mb-10">
+          <div className="mb-10 text-[64px]">
             <h1
               className="leading-[1] tracking-[-0.03em] block"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(72px,9vw,120px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               Orgsphere
             </h1>
@@ -116,7 +116,7 @@ export default function OrgspherePage() {
               className="leading-[1.1] block"
               style={{
                 fontFamily: SERIF,
-                fontSize: 'clamp(48px,6.5vw,96px)',
+                // fontSize: 'clamp(48px,6.5vw,96px)',
                 fontStyle: 'italic',
                 color: SLATE,
                 letterSpacing: '-0.02em',
@@ -126,7 +126,7 @@ export default function OrgspherePage() {
             </p>
             <p
               className="leading-[1] tracking-[-0.03em] block"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(72px,9vw,120px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               built for people.
             </p>
@@ -143,8 +143,8 @@ export default function OrgspherePage() {
 
         {/* ── ROLE / MODULES / AUDIENCE ROW ─────────────────── */}
         <section className="mx-auto max-w-[1440px] px-8 pb-16">
-          <div style={{ borderTop: '1px solid #EEEEEE', paddingTop: '48px' }}>
-            <div className="grid grid-cols-3 gap-12">
+          <div style={{ borderTop: '1px solid #EEEEEE', paddingTop: '32px' }}>
+            <div className="flex justify-between gap-12">
               <div>
                 <p className="text-xs font-semibold tracking-widest mb-3" style={{ color: SLATE }}>ROLE</p>
                 <p className="text-sm font-medium leading-relaxed" style={{ color: INK }}>
@@ -168,7 +168,7 @@ export default function OrgspherePage() {
         </section>
 
         {/* ── [01] OVERVIEW ─────────────────────────────────── */}
-        <section className="mx-auto max-w-[1440px] px-8 py-16">
+        <section className="mx-auto max-w-[1440px] px-8 py-[52px]">
           <div className="grid grid-cols-[240px_1fr] gap-16 items-start">
             <div className="flex flex-col gap-2 pt-1">
               <SectionLabel number="01">Overview</SectionLabel>
@@ -227,15 +227,18 @@ export default function OrgspherePage() {
           {/* Two-column problem / solution box */}
           <div
             style={{
-              border: '1.5px solid #eeeeee',
-              borderRadius: '12px',
+              // border: '1.5px solid #eeeeee',
+              // borderRadius: '12px',
               overflow: 'hidden',
               display: 'grid',
+              gap: "24px",
               gridTemplateColumns: '1fr 1fr',
             }}
           >
             {/* The problem */}
-            <div style={{ background: RED_LIGHT, padding: '36px', borderRight: '1px dashed #fca5a5' }}>
+            <div 
+              className='rounded-3xl border border-solid border-[#EC003F33]/20' 
+              style={{ background: RED_LIGHT, padding: '36px' }}>
               <h3
                 className="text-2xl font-semibold mb-8"
                 style={{ color: RED, fontFamily: SERIF }}
@@ -258,7 +261,9 @@ export default function OrgspherePage() {
             </div>
 
             {/* The solution */}
-            <div style={{ background: GREEN_LIGHT, padding: '36px' }}>
+            <div 
+              className='rounded-3xl border border-solid border-[#08783D33]/20' 
+              style={{ background: GREEN_LIGHT, padding: '36px' }}>
               <h3
                 className="text-2xl font-semibold mb-8"
                 style={{ color: GREEN, fontFamily: SERIF }}
@@ -515,15 +520,23 @@ export default function OrgspherePage() {
                 proposition with an in-product preview, so the user sees what the app actually looks
                 like before they're asked to log in.
               </p>
-              <div className="mt-10 w-full flex justify-center">
+              {/* <div className="mt-10 w-full flex justify-center bg-red-500">
                 <img
                   src="/Phones.png"
                   alt="Juncta onboarding — value props, sign up, and address selection"
                   style={{ maxWidth: '800px', width: '100%', height: 'auto', display: 'block', margin: '0 auto' }}
                   onError={e => { e.currentTarget.style.display = 'none' }}
                 />
-              </div>
+              </div> */}
             </div>
+          </div>
+          <div className="mt-10 w-full flex justify-center">
+            <img
+              src="/Phones.png"
+              alt="Juncta onboarding — value props, sign up, and address selection"
+              style={{ maxWidth: '800px', width: '100%', height: 'auto', display: 'block', margin: '0 auto' }}
+              onError={e => { e.currentTarget.style.display = 'none' }}
+            />
           </div>
         </section>
 
@@ -642,7 +655,7 @@ export default function OrgspherePage() {
 
         {/* ── [09] PERFORMANCE MANAGEMENT ───────────────────────────────── */}
         <section className="mx-auto max-w-[1440px] px-8 py-16">
-          <div className="grid grid-cols-[240px_1fr] gap-16 items-start mb-10">
+          <div className="grid grid-cols-[240px_1fr] gap-16 items-start mb-8">
             <div className="flex flex-col gap-2 pt-1">
               <SectionLabel number="09">Performance Management</SectionLabel>
             </div>
@@ -665,7 +678,7 @@ export default function OrgspherePage() {
               </p>
             </div>
           </div>
-          <div className="w-full flex justify-center mt-10">
+          <div className="w-full flex justify-center">
             <img
               src="/Performance.png"
               alt="Performance management mockup screens"
@@ -847,21 +860,23 @@ export default function OrgspherePage() {
             <p className="text-xs font-mono tracking-[0.15em] uppercase text-[#4a5565]">
               NEXT CASE STUDY
             </p>
+            <div>
+              <Link
+                to="/projects/helpnest"
+                className="font-normal leading-[0.95] tracking-[-0.03em] whitespace-nowrap hover:opacity-80 transition-opacity underline"
+                style={{
+                  fontFamily: SERIF,
+                  fontSize: 'clamp(52px,9vw,120px)',
+                  background: 'linear-gradient(to right, #3b82f6, #10b981)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                }}
+              >
+                Helpnest.
+              </Link>
+            </div>
             <Link
-              to="/"
-              className="font-normal leading-[0.95] tracking-[-0.03em] whitespace-nowrap hover:opacity-80 transition-opacity"
-              style={{
-                fontFamily: SERIF,
-                fontSize: 'clamp(52px,9vw,120px)',
-                background: 'linear-gradient(to right, #3b82f6, #10b981)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            >
-              Helpnest.
-            </Link>
-            <Link
-              to="/"
+              to="/projects/helpnest"
               className="flex items-center gap-2 rounded-full bg-[#0a0c0d] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a5565] transition-colors"
             >
               View all projects

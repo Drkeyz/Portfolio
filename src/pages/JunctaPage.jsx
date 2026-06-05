@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import Footer from '../components/Footer'
+import Separator from '../components/Separator'
 
 /* ─────────────────────────────────────────────────────────────
    DESIGN TOKENS — exact values from Juncta.png reference
@@ -129,13 +130,13 @@ export default function JunctaPage() {
         {/* ── HERO ─────────────────────────────────────────────── */}
         <section className="mx-auto max-w-[1440px] px-8 pt-20 pb-16">
           <p className="text-sm tracking-[0.12em] mb-8" style={{ color: TEAL }}>
-            — DEFI · MOVE PROTOCOL
+            — DEFI · MULTICHAIN PROTOCOL
           </p>
 
-          <div className="mb-10">
+          <div className="mb-10 text-[64px]">
             <h1
               className="leading-[1] tracking-[-0.03em] block"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(80px,11vw,144px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               Juncta.
             </h1>
@@ -143,7 +144,7 @@ export default function JunctaPage() {
               className="leading-[1.1] block"
               style={{
                 fontFamily: SERIF,
-                fontSize: 'clamp(56px,8vw,108px)',
+                // fontSize: 'clamp(56px,8vw,108px)',
                 fontStyle: 'italic',
                 color: SLATE,
                 letterSpacing: '-0.02em',
@@ -153,7 +154,7 @@ export default function JunctaPage() {
             </p>
             <p
               className="leading-[1] tracking-[-0.03em] block"
-              style={{ fontFamily: SERIF, fontSize: 'clamp(80px,11vw,144px)', color: INK }}
+              style={{ fontFamily: SERIF, color: INK }}
             >
               never sleeps.
             </p>
@@ -191,9 +192,11 @@ export default function JunctaPage() {
           />
         </div>
 
+        <Separator/>
+
         {/* ── PROJECT INFO & MOCKUP (inserted as per user PNG) */}
-        <section className="mx-auto max-w-[1440px] px-8 pt-16 pb-8">
-          <div className="grid grid-cols-4 gap-8 mb-12">
+        <section className="mx-auto max-w-[1440px] px-8">
+          <div className="flex justify-between mb-12">
             <div>
               <p className="text-xs font-semibold tracking-widest mb-2" style={{ color: SLATE }}>ROLE</p>
               <p className="text-sm font-medium" style={{ color: INK }}>Lead product designer<br />UX research lead</p>
@@ -632,7 +635,7 @@ export default function JunctaPage() {
         </section>
 
         {/* ── [08] DESIGN SYSTEM IMAGE ─────────────────────────── */}
-        <div className="mx-auto max-w-[1440px] px-8 pb-16">
+        <div className="mx-auto max-w-[1440px] px-8 pt-16">
           <img
             src="/Design system.png"
             alt="Juncta design system — palette, typography, components"
@@ -641,8 +644,10 @@ export default function JunctaPage() {
           />
         </div>
 
+        <Separator/>
+
         {/* ── [09] OUTCOME ─────────────────────────────────────── */}
-        <section className="mx-auto max-w-[1440px] px-8 py-16">
+        <section className="mx-auto max-w-[1440px] px-8 pb-16">
           <div className="grid grid-cols-[240px_1fr] gap-16 items-start">
             <div className="flex flex-col gap-2 pt-1">
               <SectionLabel number="09">Outcome</SectionLabel>
@@ -658,9 +663,11 @@ export default function JunctaPage() {
               </h2>
 
               {/* Three stat columns */}
-              <div className="grid grid-cols-3 gap-12">
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-12 px-16">
                 {/* 35/35 */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 border-[#eeeeee] border-[0.65px] border-solid px-7 py-8 rounded-2xl">
                   <p
                     className="font-normal leading-none tracking-tight"
                     style={{ fontFamily: SERIF, fontSize: 'clamp(48px,5vw,72px)', color: INK }}
@@ -675,7 +682,7 @@ export default function JunctaPage() {
                 </div>
 
                 {/* 6× */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 border-[#eeeeee] border-[0.65px] border-solid px-7 py-8 rounded-2xl">
                   <p
                     className="font-normal leading-none tracking-tight"
                     style={{ fontFamily: SERIF, fontSize: 'clamp(48px,5vw,72px)', color: INK }}
@@ -690,7 +697,7 @@ export default function JunctaPage() {
                 </div>
 
                 {/* 1st */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 border-[#eeeeee] border-[0.65px] border-solid px-7 py-8 rounded-2xl">
                   <p
                     className="font-normal leading-none tracking-tight"
                     style={{ fontFamily: SERIF, fontSize: 'clamp(48px,5vw,72px)', color: INK }}
@@ -704,8 +711,6 @@ export default function JunctaPage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
         </section>
 
         {/* ── NEXT PROJECT — CARGOLANDFOOD (centered) ──────────── */}

@@ -45,14 +45,16 @@ export default function MoreProjectsPage() {
       <Navbar />
 
       <main className="mx-auto max-w-[1440px] px-8 pt-24 pb-16">
-        <div className="flex items-start justify-between gap-8">
+        <div className="gap-y-8">
           <div className="flex-1">
             <Link to="/" className="text-sm text-[#4a5565] mb-4 inline-block">&lt; All projects</Link>
-            <h1 className="mt-2 text-[clamp(36px,4.4vw,48px)] font-medium" style={{ fontFamily: '"Instrument Serif", Georgia, serif' }}>More projects</h1>
           </div>
-          <p className="w-1/3 text-sm text-[#4a5565]">
-            Some of these projects aren’t part of the main portfolio; some are projects I played around with and decided to include.
-          </p>
+          <div className='flex justify-between'>
+            <h1 className="mt-2 text-[clamp(32px,4.4vw,48px)] font-medium" style={{ fontFamily: '"Instrument Serif", Georgia, serif' }}>More projects</h1>
+            <p className="w-1/3 text-sm text-[#4a5565] my-auto">
+              Some of these projects aren’t part of the main portfolio; some are projects I played around with and decided to include.
+            </p>
+          </div>
         </div>
 
         <section className="mt-8">
