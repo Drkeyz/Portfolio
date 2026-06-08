@@ -944,7 +944,7 @@ export default function CargolandfoodPage() {
               <p className="underline">Orgsphere.</p>
             </h2>
             <Link
-              to="/projects/orgsphere"
+              to="/projects/"
               className="flex items-center gap-2 rounded-full bg-[#0a0c0d] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a5565] transition-colors"
             >
               View project
