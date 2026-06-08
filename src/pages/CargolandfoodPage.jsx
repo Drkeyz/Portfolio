@@ -47,7 +47,7 @@ function Navbar() {
 /* ─────────────────────────────────────────────────────────────
    SECTION LABEL  "[01] Overview"
 ───────────────────────────────────────────────────────────── */
-function SectionLabel({ number, children }) {
+export function SectionLabel({ number, children }) {
   return (
     <p className="text-sm font-medium mb-8 mt-3" style={{ color: ORANGE }}>
       {number && <span>[{number}]</span>}{' '}{children}
