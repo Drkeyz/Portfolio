@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
+import { ArrowUpRight } from 'lucide-react'
 import Footer from '../components/Footer'
 
 const SERIF = '"Instrument Serif", Georgia, serif'
 const SANS = '"Inter", sans-serif'
 const INK = '#111827' // gray-900
+const SLATE = '#4a5565'
 
 export default function SneakerStorePage() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
@@ -50,10 +52,10 @@ export default function SneakerStorePage() {
           <div className="text-sm font-bold tracking-[0.15em] text-[#0f766e] mb-6 uppercase">
             — DESIGN SHOWCASE
           </div>
-          <h1 className="text-[clamp(80px,10vw,140px)] leading-[0.85] tracking-tight mb-2" style={{ fontFamily: SERIF, color: INK }}>
+          <h1 className="text-[64px] leading-[0.85] tracking-tight mb-2" style={{ fontFamily: SERIF, color: INK }}>
             SneakerShop
           </h1>
-          <h2 className="text-[clamp(80px,10vw,140px)] leading-[0.85] tracking-tight italic text-gray-500 mb-12" style={{ fontFamily: SERIF }}>
+          <h2 className="text-[64px] leading-[0.85] tracking-tight italic text-gray-500 mb-12" style={{ fontFamily: SERIF }}>
             Mobile
           </h2>
           <p className="max-w-2xl text-xl leading-relaxed text-gray-600">
@@ -62,8 +64,8 @@ export default function SneakerStorePage() {
         </div>
 
         {/* Five Screens Section */}
-        <div className="grid xl:grid-cols-[1fr_2fr] gap-12 items-start mb-24">
-          <div className="sticky top-24 pt-8">
+        <div className="mx-auto max-w-[1440px] px-8 pb-20">
+          {/* <div className="sticky top-24 pt-8">
             <div className="text-sm font-medium text-[#0f766e] mb-20">
               [01] All Screens
             </div>
@@ -73,23 +75,42 @@ export default function SneakerStorePage() {
             <p className="text-lg leading-relaxed text-gray-600 max-w-md">
               Every screen follows a consistent design language — clean white cards, bold product photography, a teal CTA, and a minimal bottom nav that stays out of the way.
             </p>
+          </div> */}
+
+          <div className='flex'>
+            <div className="flex items-center gap-6 text-sm text-[#0f766e] uppercase tracking-[0.18em] my-auto">
+              <span>[01] Overview</span>
+            </div>
+            <h2 className="text-5xl font-normal tracking-[-0.03em] text-center flex-1" style={{ fontFamily: SERIF, color: INK }}>
+              One dashboard. <span className="italic" style={{ color: SLATE }}>Total access.</span>
+            </h2>
+          </div>
+
+          <div className='py-20 space-y-[18px]'>
+            <img src='/three_iphones.svg' className='w-full'/>
+            <img src='/two_iphones.svg' className='mx-auto'/>
           </div>
 
           {/* The CSS Sprite Implementation for the Phone Mockups */}
-          <div className="relative w-full rounded-3xl overflow-hidden bg-white min-h-[800px] shadow-2xl border border-gray-100 flex items-center justify-center pt-10">
+          {/* <div className="relative w-full rounded-3xl overflow-hidden bg-white min-h-[800px] shadow-2xl border border-gray-100 flex items-center justify-center pt-10">
             <img 
               src="/Sneakershop.png" 
               alt="Phone Mockups"
               className="w-full h-auto object-cover object-top"
               style={{ objectPosition: '0% 28%' }} 
             />
-          </div>
+          </div> */}
         </div>
       </main>
 
       {/* Raw Screens Section */}
-      <section className="bg-[#f9fafb] py-32 border-y border-gray-200">
-        <div className="mx-auto max-w-[1440px] px-8">
+      <section className="bg-[#f9fafb] py-[53px] px-[70px] border-y border-gray-200 flex justify-between">
+        <img src='/14_pro_max_1.svg'/>
+        <img src='/14_pro_max_2.svg'/>
+        <img src='/14_pro_max_3.svg'/>
+        <img src='/14_pro_max_4.svg'/>
+        <img src='/14_pro_max_5.svg'/>
+        {/* <div className="mx-auto max-w-[1440px] px-8">
            <div className="w-full rounded-2xl overflow-hidden min-h-[400px]">
             <img 
                 src="/Sneakershop.png" 
@@ -98,16 +119,17 @@ export default function SneakerStorePage() {
                 style={{ objectPosition: '0% 88%', transform: 'scale(1.05)' }} 
               />
            </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Next Project Footer Area */}
-      <section className="py-32 flex justify-center bg-white">
+      <section className="py-[92px] flex gap-x-2.5 justify-center bg-white">
         <Link 
           to="/projects/more" 
           className="inline-flex items-center rounded-full bg-black px-8 py-4 text-lg font-medium text-white hover:bg-gray-800 transition-transform hover:scale-105"
         >
-          View other projects <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+          View other projects 
+          <ArrowUpRight size={14} className='my-auto'/>
         </Link>
       </section>
 

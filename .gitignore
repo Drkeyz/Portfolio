@@ -1,8 +1,2 @@
-<<<<<<< Updated upstream
 node_modules/
-=======
-node_modules/
-dist/g
-git rm -r --cached node_modules
-git rm -r --cached dist
->>>>>>> Stashed changes
+dist/

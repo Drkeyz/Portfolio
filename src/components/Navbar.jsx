@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-8 py-3">
         {/* Logo */}
         <a
-          href="#"
+          href="/"
           className="rounded-full bg-[#0a0c0d] px-4 py-1.5 text-sm font-medium text-white hover:bg-[#4a5565] transition-colors"
         >
           Oladimeji
@@ -62,8 +62,8 @@ export default function Navbar() {
         <nav className="flex items-center gap-8 text-sm text-[#0a0c0d]">
           <a href="#about" className="hover:text-[#4a5565] transition-colors">About</a>
           <a href="#services" className="hover:text-[#4a5565] transition-colors">Services</a>
-          <a href="#contact" className="hover:text-[#4a5565] transition-colors">Contact</a>
-          <a href="#projects" className="hover:text-[#4a5565] transition-colors">Project</a>
+          <a href="mailto:dimeji.adebiyi1@gmail.com" className="hover:text-[#4a5565] transition-colors">Contact</a>
+          <a href="/projects/more" className="hover:text-[#4a5565] transition-colors">Project</a>
         </nav>
       </div>
     </header>

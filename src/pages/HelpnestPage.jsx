@@ -395,7 +395,7 @@ export default function HelpnestPage() {
                   </p>
                 </div>          
               </div>
-              <div className='bg-[#2F6D9B]/10 h-[51.6875rem] flex flex-col justify-center items-center mt-8'>
+              <div className='bg-[#2F6D9B]/10 h-[45.625rem] flex flex-col justify-center items-center mt-8'>
                 <img 
                   src='/helpnest-dashboard.svg'
                   alt="Helpnest dashboard screen mockup"
@@ -421,7 +421,7 @@ export default function HelpnestPage() {
                   </p>
                 </div>          
               </div>
-              <div className='bg-[#2F6D9B]/10 h-[51.6875rem] flex flex-col justify-center items-center mt-8'>
+              <div className='bg-[#2F6D9B]/10 h-[34.5rem] flex flex-col justify-center items-center mt-8'>
                 <img 
                   src='/live_agent_console.svg'
                   alt="Helpnest live agent console screen"
