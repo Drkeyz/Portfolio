@@ -63,7 +63,7 @@ export default function Navbar() {
           <a href="#about" className="hover:text-[#4a5565] transition-colors">About</a>
           <a href="#services" className="hover:text-[#4a5565] transition-colors">Services</a>
           <a href="mailto:dimeji.adebiyi1@gmail.com" className="hover:text-[#4a5565] transition-colors">Contact</a>
-          <a href="/projects/more" className="hover:text-[#4a5565] transition-colors">Project</a>
+          <a href="#projects" className="hover:text-[#4a5565] transition-colors">Project</a>
         </nav>
       </div>
     </header>

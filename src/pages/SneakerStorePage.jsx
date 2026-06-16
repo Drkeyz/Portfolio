@@ -35,14 +35,14 @@ export default function SneakerStorePage() {
         </div>
       </nav>
 
-      <main className="mx-auto max-w-[1440px] px-8 pt-12">
-        <Link to="/projects/more" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-black transition-colors mb-24">
+      <section className="mx-auto max-w-[1440px] px-8 pt-12">
+        <Link to="/projects/more" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-black transition-colors mb-8">
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
           All projects
         </Link>
 
         {/* Meta Bar */}
-        <div className="flex justify-between items-center text-xs font-bold tracking-[0.2em] text-gray-500 mb-20 uppercase">
+        <div className="flex justify-between items-center text-xs font-bold tracking-[0.2em] text-gray-500 mb-[70px] uppercase">
           <div>SCOPE / MOBILE DESIGN</div>
           <div>2024</div>
         </div>
@@ -65,17 +65,6 @@ export default function SneakerStorePage() {
 
         {/* Five Screens Section */}
         <div className="mx-auto max-w-[1440px] px-8 pb-20">
-          {/* <div className="sticky top-24 pt-8">
-            <div className="text-sm font-medium text-[#0f766e] mb-20">
-              [01] All Screens
-            </div>
-            <h3 className="text-6xl font-normal tracking-tight mb-6" style={{ fontFamily: SERIF }}>
-              Five screens
-            </h3>
-            <p className="text-lg leading-relaxed text-gray-600 max-w-md">
-              Every screen follows a consistent design language — clean white cards, bold product photography, a teal CTA, and a minimal bottom nav that stays out of the way.
-            </p>
-          </div> */}
 
           <div className='flex'>
             <div className="flex items-center gap-6 text-sm text-[#0f766e] uppercase tracking-[0.18em] my-auto">
@@ -90,18 +79,8 @@ export default function SneakerStorePage() {
             <img src='/three_iphones.svg' className='w-full'/>
             <img src='/two_iphones.svg' className='mx-auto'/>
           </div>
-
-          {/* The CSS Sprite Implementation for the Phone Mockups */}
-          {/* <div className="relative w-full rounded-3xl overflow-hidden bg-white min-h-[800px] shadow-2xl border border-gray-100 flex items-center justify-center pt-10">
-            <img 
-              src="/Sneakershop.png" 
-              alt="Phone Mockups"
-              className="w-full h-auto object-cover object-top"
-              style={{ objectPosition: '0% 28%' }} 
-            />
-          </div> */}
         </div>
-      </main>
+      </section>
 
       {/* Raw Screens Section */}
       <section className="bg-[#f9fafb] py-[53px] px-[70px] border-y border-gray-200 flex justify-between">
@@ -110,16 +89,6 @@ export default function SneakerStorePage() {
         <img src='/14_pro_max_3.svg'/>
         <img src='/14_pro_max_4.svg'/>
         <img src='/14_pro_max_5.svg'/>
-        {/* <div className="mx-auto max-w-[1440px] px-8">
-           <div className="w-full rounded-2xl overflow-hidden min-h-[400px]">
-            <img 
-                src="/Sneakershop.png" 
-                alt="Raw Screens"
-                className="w-full h-auto object-cover object-bottom"
-                style={{ objectPosition: '0% 88%', transform: 'scale(1.05)' }} 
-              />
-           </div>
-        </div> */}
       </section>
 
       {/* Next Project Footer Area */}

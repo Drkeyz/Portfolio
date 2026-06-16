@@ -79,12 +79,36 @@ export default function ArgusPage() {
 
   return (
     <div className="min-h-screen bg-white" style={{ color: INK }}>
-      <Navbar />
+      <nav className="flex items-center justify-between px-8 py-6 max-w-[1440px] mx-auto">
+        <div className="flex items-center gap-4">
+          <Link 
+            to="/" 
+            className="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-gray-800 transition-colors"
+          >
+            Oladimeji.
+          </Link>
+          <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-gray-600">
+            <span className="h-2 w-2 rounded-full bg-[#10b981]"></span>
+            Project 03
+          </div>
+        </div>
+        
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+          <Link to="/" className="hover:text-black transition-colors">Back to work</Link>
+          <Link to="/#services" className="hover:text-black transition-colors">Services</Link>
+          <Link to="/#contact" className="hover:text-black transition-colors">Contact</Link>
+        </div>
+      </nav>
 
-      <section className="mx-auto max-w-[1440px] px-8 pt-[100px] pb-20">
+      <section className="mx-auto max-w-[1440px] px-8 pt-12 pb-20">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
             <div className="flex flex-col gap-3 w-full">
+              <Link to="/projects/more" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-black transition-colors mb-8">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                All projects
+              </Link>
+              
               <div className="flex flex-wrap items-center gap-8 text-xs uppercase tracking-[0.16em]" style={{ color: SLATE_LIGHT }}>
                 <span>PROJECT / ARGUS</span>
                 <span>SCOPE / LANDING PAGE</span>

@@ -39,7 +39,6 @@ function ProjectCard({ p }) {
         <h3 className="text-lg font-medium text-[#0a0c0d]">{p.title}</h3>
         <div className="text-right text-sm text-[#4a5565] leading-relaxed">
           <div>{p.year}</div>
-          <div>{p.type}</div>
         </div>
       </div>
     </>

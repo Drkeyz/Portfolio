@@ -30,7 +30,6 @@ function ProjectCard({ p }) {
         <h3 className="text-base font-medium text-[#0a0c0d]">{p.title}</h3>
         <div className="text-right text-sm text-[#4a5565] leading-relaxed">
           <div>{p.year}</div>
-          <div>{p.type}</div>
         </div>
       </div>
     </Link>
@@ -44,7 +43,7 @@ export default function MoreProjectsPage() {
     <div className="min-h-screen bg-white" style={{ color: '#0a0c0d' }}>
       <Navbar />
 
-      <main className="mx-auto max-w-[1440px] px-8 pt-24 pb-16">
+      <main className="mx-auto max-w-[1440px] px-8 pt-24 pb-16" id='projects'>
         <div className="gap-y-8">
           <div className="flex-1">
             <Link to="/" className="text-sm text-[#4a5565] mb-4 inline-block">&lt; All projects</Link>
