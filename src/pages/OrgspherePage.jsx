@@ -33,7 +33,7 @@ function Navbar() {
           Case Study 03
         </div>
 
-        <Link
+        {/* <Link
           to="/"
           className="flex items-center gap-1.5 text-sm text-[#4a5565] hover:text-[#0a0c0d] transition-colors"
         >
@@ -41,7 +41,13 @@ function Navbar() {
             <path d="M19 12H5M5 12l7-7M5 12l7 7" />
           </svg>
           All projects
-        </Link>
+        </Link> */}
+
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+          <Link to="/" className="hover:text-black transition-colors">Back to work</Link>
+          <Link to="/#services" className="hover:text-black transition-colors">Services</Link>
+          <Link to="/#contact" className="hover:text-black transition-colors">Contact</Link>
+        </div>
       </div>
     </header>
   )
@@ -101,6 +107,10 @@ export default function OrgspherePage() {
 
         {/* ── HERO ──────────────────────────────────────────── */}
         <section className="mx-auto max-w-[1440px] px-8 pt-16 pb-8">
+          <Link to="/#projects" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-black transition-colors mb-8">
+            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+            Back
+          </Link>
           <p className="text-sm tracking-[0.12em] mb-8" style={{ color: GREEN }}>
             03 — MOBILE · ENTERPRISE HR PLATFORM
           </p>
