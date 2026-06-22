@@ -922,7 +922,7 @@ const SERIF        = '"Instrument Serif", Georgia, serif'
 function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#f3f4f6]">
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-5 md:px-8 py-3">
+      <div className="mx-auto flex items-center justify-between px-5 md:px-8 py-3">
         <Link to="/" className="rounded-full bg-[#0a0c0d] px-4 py-1.5 text-sm font-medium text-white hover:bg-[#4a5565] transition-colors">
           Oladimeji
         </Link>
@@ -1003,7 +1003,7 @@ export default function OrgspherePage() {
 
         {/* ── META BAR ──────────────────────────────────────────── */}
         <div
-          className="mx-auto max-w-[1440px] px-5 md:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 border-b border-[#EEEEEE]"
+          className="mx-auto px-5 md:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 border-b border-[#EEEEEE]"
           style={{ paddingTop: '64px', paddingBottom: '16px' }}
         >
           <span className="text-xs tracking-[0.1em] uppercase" style={{ color: SLATE }}>
@@ -1012,7 +1012,7 @@ export default function OrgspherePage() {
           <span className="text-xs tracking-[0.1em] uppercase" style={{ color: SLATE }}>
             SCOPE&nbsp;<span className="font-semibold" style={{ color: INK }}>/ PRODUCT DESIGN, MOBILE HR PLATFORM</span>
           </span>
-          <span className="text-xs tracking-[0.1em] uppercase" style={{ color: SLATE }}>2025</span>
+        
         </div>
 
         {/* ── HERO ──────────────────────────────────────────────── */}

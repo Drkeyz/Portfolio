@@ -183,7 +183,7 @@ export default function HeroProjects() {
       <div className="sticky top-0 h-screen overflow-hidden bg-white">
 
         {/* Outer: centres + adds page padding */}
-        <div className="h-full mx-auto max-w-[1440px] px-8">
+        <div className="h-full mx-auto px-8">
 
           {/* Inner: NO padding — absolute children use this as their reference frame */}
           <div ref={innerRef} className="relative h-full">

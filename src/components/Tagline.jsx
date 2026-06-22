@@ -1,6 +1,6 @@
 export default function Tagline() {
   return (
-    <section className="px-8 py-16 mx-auto max-w-[1440px]">
+    <section className="px-8 py-16 mx-auto">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 items-start">
 
         {/* Left — tagline */}
@@ -16,7 +16,7 @@ export default function Tagline() {
           <img
             src="/Container.png"
             alt="Tech stack — Figma, Adobe XD, Framer, Notion, GitHub, ChatGPT, Framer"
-            className="w-full max-w-[440px] h-auto object-contain"
+            className="w-full h-auto object-contain"
           />
         </div>
 

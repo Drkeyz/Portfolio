@@ -64,7 +64,7 @@ export default function Footer() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-[1440px] px-8 py-12 flex flex-col gap-12">
+      <div className="relative z-10 mx-auto px-8 py-12 flex flex-col gap-12">
         {/* Heading */}
         <div>
           <p className="text-[clamp(40px,5vw,72px)] font-normal leading-[1.25]" style={{ fontFamily: '"Instrument Serif", Georgia, serif' }}>

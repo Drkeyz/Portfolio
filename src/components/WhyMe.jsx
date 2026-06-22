@@ -54,7 +54,7 @@ function BenefitCard({ title, desc, contrast }) {
 
 export default function WhyMe() {
   return (
-    <section className="px-8 py-16 mx-auto max-w-[1440px]">
+    <section className="px-8 py-16 mx-auto">
       {/* Header */}
       <div className="flex flex-col items-center gap-4 mb-12">
         <span className="rounded-full border border-[#e5e7eb] px-4 py-1.5 text-sm text-[#4a5565]">

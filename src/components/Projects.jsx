@@ -62,7 +62,7 @@ function ProjectCard({ p, index }) {
 
 export default function Projects({ viewMoreRoute = '/projects/more' }) {
   return (
-    <section id="projects" className="mx-auto max-w-[1440px] px-8 pb-16">
+    <section id="projects" className="mx-auto px-8 pb-16">
 
       {/* Header row */}
       <div className="flex items-center justify-between mb-6 mt-[62px]">

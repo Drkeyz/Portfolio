@@ -775,7 +775,7 @@ function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#f3f4f6]">
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-5 md:px-8 py-3">
+      <div className="mx-auto flex items-center justify-between px-5 md:px-8 py-3">
         <Link to="/" className="rounded-full bg-[#0a0c0d] px-4 py-1.5 text-sm font-medium text-white hover:bg-[#4a5565] transition-colors">
           Oladimeji
         </Link>
@@ -860,19 +860,22 @@ export default function JunctaPage() {
 
         {/* META BAR */}
         <div
-          className="mx-auto max-w-[1440px] px-5 md:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 border-b border-[#EEEEEE]"
+          className="px-5 md:px-8 border-b border-[#EEEEEE]"
           style={{ paddingTop: '64px', paddingBottom: '16px' }}
         >
-          <span className="text-xs tracking-[0.1em] uppercase" style={{ color: SLATE }}>
+          <div className=" mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+<span className="text-xs tracking-[0.1em] uppercase" style={{ color: SLATE }}>
             PROJECT&nbsp;<span className="font-semibold" style={{ color: INK }}>/ JUNCTA</span>
           </span>
           <span className="text-xs tracking-[0.1em] uppercase" style={{ color: SLATE }}>
             SCOPE&nbsp;<span className="font-semibold" style={{ color: INK }}>/ UX RESEARCH, PRODUCT DESIGN</span>
           </span>
+          </div>
+          
         </div>
 
         {/* HERO */}
-        <section className="mx-auto max-w-[1440px] px-5 md:px-8 pt-10 md:pt-20 pb-10 md:pb-16">
+        <section className="mx-auto max-w-[1700px] px-5 md:px-8 pt-10 md:pt-20 pb-10 md:pb-16">
           <Link to="/#projects" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-black transition-colors mb-6 md:mb-8">
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />

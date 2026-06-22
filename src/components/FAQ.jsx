@@ -61,7 +61,7 @@ const profileImg = '/WhatsApp Image 2026-04-13 at 15.16.18 1.png'
 
 export default function FAQ() {
   return (
-    <section className="px-8 py-20 mx-auto max-w-[1440px]">
+    <section className="px-8 py-20 mx-auto">
       <div className="flex flex-col lg:flex-row gap-16">
 
         {/* Left — FAQs */}

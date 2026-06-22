@@ -49,7 +49,7 @@ function SectionLabel({ num, label }) {
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-[1440px] px-8">
+    <section id="about" className="mx-auto px-8">
 
       {/* ── [01] Who I am ── */}
       <div className="flex flex-col lg:flex-row gap-16 py-16">

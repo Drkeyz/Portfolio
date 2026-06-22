@@ -407,7 +407,7 @@ export default function Hero() {
       </div>
 
       {/* ════════ DESKTOP (original, unchanged) ════════ */}
-      <div className="hero-desktop mx-auto max-w-[1440px] px-8">
+      <div className="hero-desktop mx-auto px-8">
         <div className="relative h-full">
 
           {/* Left column */}
