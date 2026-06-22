@@ -167,14 +167,14 @@ export default function SneakerStorePage() {
             — DESIGN SHOWCASE
           </div>
           <h1
-            className="leading-[0.85] tracking-tight mb-2"
-            style={{ fontFamily: SERIF, color: INK, fontSize: 'clamp(44px,8vw,96px)' }}
+            className="leading-[0.85] tracking-tight mb-2 md:text-[64px] text-[44px]"
+            style={{ fontFamily: SERIF, color: INK }}
           >
             SneakerShop
           </h1>
           <h2
-            className="leading-[0.85] tracking-tight italic text-gray-500 mb-8 md:mb-12"
-            style={{ fontFamily: SERIF, fontSize: 'clamp(44px,8vw,96px)' }}
+            className="leading-[0.85] tracking-tight italic text-gray-500 mb-8 md:mb-12 md:text-[64px] text-[44px]"
+            style={{ fontFamily: SERIF }}
           >
             Mobile
           </h2>

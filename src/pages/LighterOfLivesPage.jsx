@@ -448,10 +448,14 @@ export default function LighterOfLivesPage() {
         </div>
 
         {/* Heading */}
-        <h1
+        {/* <h1
           className="font-normal leading-[0.95] mb-6 md:mb-8"
           style={{ fontFamily: SERIF, color: INK, fontSize: 'clamp(44px,8vw,96px)' }}
         >
+          Lighter of <span style={{ color: SLATE_LIGHT }}>Lives</span> Foundation
+        </h1> */}
+
+        <h1 className="mt-8 md:text-[64px] text-[44px] leading-[0.95] font-normal md:w-[300px] w-[220px] mb-6" style={{ fontFamily: SERIF, color: INK }}>
           Lighter of <span style={{ color: SLATE_LIGHT }}>Lives</span> Foundation
         </h1>
 

@@ -683,8 +683,8 @@ export default function ArgusPage() {
 
         {/* Display heading */}
         <h1
-          className="leading-[0.95] font-normal mb-6"
-          style={{ fontFamily: SERIF, color: INK, fontSize: 'clamp(44px,8vw,96px)' }}
+          className="leading-[0.95] font-normal mb-6 md:text-[64px] text-[44px]"
+          style={{ fontFamily: SERIF, color: INK }}
         >
           Argus
           <span className="block italic" style={{ color: '#4b5563' }}>AI-Powered Blockchain</span>
@@ -871,7 +871,7 @@ export default function ArgusPage() {
         </SectionHeader>
 
         {/* Stacked on mobile, side-by-side on xl */}
-        <div className="flex flex-col xl:flex-row gap-8 mt-10 md:mt-16">
+        <div className="flex flex-col xl:flex-row xl:justify-between gap-8 mt-10 md:mt-16">
           {/* Decision list */}
           <div className="bg-white xl:w-[581px]">
             {[

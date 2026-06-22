@@ -404,19 +404,6 @@ export default function Hero() {
           {/* CTA */}
           <CTAButton />
         </div>
-
-        {/* Horizontal cover strip */}
-        <div className="hero-covers-strip mt-8">
-          {COVERS.map((p) => (
-            <div key={p.id} className="hero-cover-card" style={{ backgroundColor: p.bg }}>
-              <img
-                src={p.src}
-                alt={p.id}
-                onError={e => { e.currentTarget.style.display = 'none' }}
-              />
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* ════════ DESKTOP (original, unchanged) ════════ */}
@@ -481,6 +468,7 @@ export default function Hero() {
             {COVERS.map((p, i) => (
               <div
                 key={p.id}
+                data-hero-cover={i}
                 style={{
                   position: 'absolute',
                   left: `${FLOAT[i].l}%`,

@@ -1473,7 +1473,7 @@ export default function OrgspherePage() {
             <p className="text-xs font-mono tracking-[0.15em] uppercase text-[#4a5565]">NEXT CASE STUDY</p>
             <Link
               to="/projects/helpnest"
-              className="font-normal leading-[0.95] tracking-[-0.03em] hover:opacity-80 transition-opacity underline break-words"
+              className="font-normal leading-[0.95] tracking-[-0.03em] hover:opacity-80 transition-opacity underline underline-offset-8 decoration-2 break-words"
               style={{
                 fontFamily: SERIF,
                 fontSize: 'clamp(40px,9vw,120px)',

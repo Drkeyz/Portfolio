@@ -7,13 +7,14 @@ const PROJECTS = [
   { id: 'helpnest',      title: 'Helpnest',        year: '2025', type: 'UI Design', src: '/covers/Frame 1618868789.png',   bg: '#e8f0fb', route: '/projects/helpnest' },
 ]
 
-function ProjectCard({ p }) {
+function ProjectCard({ p, index }) {
   const inner = (
     <>
       {/* Cover */}
       <div
         className="relative w-full overflow-hidden rounded-2xl group-hover:shadow-xl transition-shadow"
         style={{ backgroundColor: p.bg, aspectRatio: '677/420' }}
+        data-project-cover={index}
       >
         <img
           src={p.src}
@@ -71,8 +72,8 @@ export default function Projects({ viewMoreRoute = '/projects/more' }) {
 
       {/* 2×2 grid */}
       <div className="grid grid-cols-2 gap-x-4 gap-y-8">
-        {PROJECTS.map((p) => (
-          <ProjectCard key={p.id} p={p} />
+        {PROJECTS.map((p, i) => (
+          <ProjectCard key={p.id} p={p} index={i} />
         ))}
       </div>
 

@@ -367,13 +367,17 @@ export default function CartAgroPage() {
         </div>
 
         {/* Heading */}
-        <h1
+        {/* <h1
           className="font-normal leading-[0.95] mb-6 md:mb-8"
           style={{ fontFamily: SERIF, color: INK, fontSize: 'clamp(44px,8vw,96px)' }}
         >
           CartAgro{' '}
           <span style={{ color: SLATE_LIGHT }}>Landing Page</span>{' '}
           Redesign
+        </h1> */}
+
+        <h1 className="mt-8 md:text-[64px] text-[44px] leading-[0.95] font-normal md:w-[300px] w-[220px] mb-6" style={{ fontFamily: SERIF, color: INK }}>
+          CartAgro <span style={{ color: SLATE_LIGHT }}>Landing Page</span> Redesign
         </h1>
 
         <p className="max-w-3xl text-base md:text-lg leading-relaxed" style={{ color: SLATE }}>

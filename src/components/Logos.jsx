@@ -13,7 +13,7 @@ export default function Logos() {
   return (
     <section className="w-full">
       {/* Top rule — 30px margin below it starts the scroll */}
-      <hr style={{ borderColor: '#EEEEEE', margin: '62px 0 30px 0px', borderTopWidth: '1px' }} />
+      <hr style={{ borderColor: '#EEEEEE', margin: '0 0 30px 0px', borderTopWidth: '1px' }} />
 
       <style>{`
         @keyframes marquee {

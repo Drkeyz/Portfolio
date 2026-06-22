@@ -1574,14 +1574,14 @@ export default function CargolandfoodPage() {
           <div className="border-t border-[#EEEEEE] pt-14 md:pt-16 flex flex-col items-center text-center gap-6 md:gap-8">
             <p className="text-xs tracking-[0.15em] uppercase" style={{ color: SLATE }}>Next project</p>
             <Link
-              to="/projects/"
+              to="/projects/orgsphere"
               className="font-normal leading-[0.95] tracking-[-0.03em] underline underline-offset-8 decoration-2 hover:opacity-80 transition-opacity break-words"
               style={{ fontFamily: SERIF, fontSize: 'clamp(40px,9vw,120px)', color: '#08783D' }}
             >
               Orgsphere.
             </Link>
             <Link
-              to="/projects/"
+              to="/projects/orgsphere"
               className="flex items-center gap-2 rounded-full bg-[#0a0c0d] px-6 py-3 text-sm font-medium text-white hover:bg-[#4a5565] transition-colors"
             >
               View project
