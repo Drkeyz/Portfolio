@@ -887,11 +887,24 @@ export default function JunctaPage() {
             — DEFI · MULTICHAIN PROTOCOL
           </p>
 
-          <div className="mb-8 md:mb-10" style={{ fontSize: 'clamp(44px,8vw,96px)' }}>
-            <h1 className="leading-[1] tracking-[-0.03em] block" style={{ fontFamily: SERIF, color: INK }}>Juncta.</h1>
-            <p className="leading-[1.1] block" style={{ fontFamily: SERIF, fontStyle: 'italic', color: SLATE, letterSpacing: '-0.02em' }}>Where liquidity</p>
-            <p className="leading-[1] tracking-[-0.03em] block" style={{ fontFamily: SERIF, color: INK }}>never sleeps.</p>
+          {/* <div>
+            <div>
+              
+            </div>
+          </div> */}
+
+          <div className='flex justify-between md:flex-row flex-col md:py-0 pb-4'>
+            <div className="mb-8 md:mb-10" style={{ fontSize: 'clamp(44px,8vw,96px)' }}>
+              <h1 className="leading-[1] tracking-[-0.03em] block" style={{ fontFamily: SERIF, color: INK }}>Juncta.</h1>
+              <p className="leading-[1.1] block" style={{ fontFamily: SERIF, fontStyle: 'italic', color: SLATE, letterSpacing: '-0.02em' }}>Where liquidity</p>
+              <p className="leading-[1] tracking-[-0.03em] block" style={{ fontFamily: SERIF, color: INK }}>never sleeps.</p>
+            </div>
+            <div className='h-fit rounded-md overflow-hidden'>
+              <video src='/juncta_cedra_launch.mp4' autoPlay muted loop playsInline className='md:h-[300px] h-[250px]'/>
+            </div>            
           </div>
+
+          
 
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-5 md:gap-12">
             <p className="max-w-2xl text-base md:text-lg leading-relaxed" style={{ color: SLATE }}>
@@ -904,7 +917,7 @@ export default function JunctaPage() {
               href="https://juncta.xyz"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 flex items-center gap-1.5 text-sm font-medium transition-opacity hover:opacity-70"
+              className="shrink-0 flex items-center gap-1.5 text-sm font-medium transition-opacity hover:opacity-70 my-auto"
               style={{ color: TEAL }}
             >
               Live link to Juncta

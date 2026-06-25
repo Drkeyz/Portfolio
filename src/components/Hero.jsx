@@ -407,7 +407,7 @@ export default function Hero() {
       </div>
 
       {/* ════════ DESKTOP (original, unchanged) ════════ */}
-      <div className="hero-desktop mx-auto px-8">
+      <div className="hero-desktop mx-auto max-w-[1440px] px-8">
         <div className="relative h-full">
 
           {/* Left column */}
@@ -454,7 +454,7 @@ export default function Hero() {
           {/* Right: descriptor */}
           <div
             className="absolute"
-            style={{ left: '57%', top: '-5vh', width: '37%' }}
+            style={{ left: '60%', top: '5vh', width: '37%' }}
           >
             <p className="text-sm leading-relaxed text-[#4a5565]">
               I help startups and established teams stop guessing and start

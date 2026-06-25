@@ -38,7 +38,7 @@ function ProjectCard({ p, index }) {
       {/* Label row */}
       <div className="flex items-start justify-between">
         <h3 className="text-lg font-medium text-[#0a0c0d]">{p.title}</h3>
-        <div className="text-right text-sm text-[#4a5565] leading-relaxed">
+        <div className="text-right text-sm text-[#4a5565] leading-relaxed my-auto">
           <div>{p.year}</div>
         </div>
       </div>
