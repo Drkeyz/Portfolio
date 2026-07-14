@@ -22,8 +22,8 @@ const socials = [
     ),
   },
   {
-    label: 'YouTube',
-    href: 'https://drive.google.com/file/d/1lhh2OEUNUH2Z2uAZKd0g3kIpyrc8HTPH/view?usp=sharing',
+    label: 'Resume',
+    href: 'https://docs.google.com/document/d/1myjOk7TupJyro1tc-HA8c7R44ifX_Y4-/edit?usp=sharing&ouid=104925823111281328523&rtpof=true&sd=true',
     // icon: (
     //   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
     //     <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
