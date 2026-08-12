@@ -1,7 +1,7 @@
 const benefits = [
   {
     title: 'Skilled Professional',
-    desc: 'With decades in tech and 7+ years of experience, I bring a depth of knowledge that ensures every design decision is informed, intentional, and impactful.',
+    desc: 'With decades in tech and 5+ years of experience, I bring a depth of knowledge that ensures every design decision is informed, intentional, and impactful.',
     contrast: 'Lack of experience may result in design inconsistencies and costly revisions.',
   },
   {
